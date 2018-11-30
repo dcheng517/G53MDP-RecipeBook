@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|bottom|fill_vertical|center_horizontal|clip_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top|center_vertical|center_horizontal|center|fill|start"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="254dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Enter recipe name here" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSearch"
+            android:text="Search" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recipeList"
+        android:layout_width="match_parent"
+        android:layout_height="418dp"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="126dp"
+            android:layout_height="52dp"
+            android:onClick="onClickAdd"
+            android:text="Add recipe" />
+    </LinearLayout>
+
+</LinearLayout>
